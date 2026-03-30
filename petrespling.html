@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Pet Respling</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://respnull.github.io/assets/128.png');
+        background-repeat: repeat;
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #00ff00;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        font-weight: bold;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    a { color: #00ff00; }
+
+    a.repo-link { color: #00ff00; text-decoration: none; }
+
+    a.repo-link:hover { text-decoration: underline; }
+
+    nav b {
+        color: #009900;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        font-weight: bold;
+    }
+
+
+    b { color: #009900; }
+
+    .container {
+        max-width: 850px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.75);
+        border-radius: 12px;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .projgrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .projcard {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .projcard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .projcard img {
+        width: 100%;
+        aspect-ratio: 63 / 50;
+        object-fit: cover;
+        display: block;
+    }
+
+    .cardtext {
+        padding: 0.8rem 0.5rem;
+        color: #00ff00;
+    }
+
+    .cardtext h3 {
+        margin: 0.2rem 0;
+        font-size: 1.1rem;
+    }
+
+    .cardtext p {
+        margin: 0.2rem 0 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .cardtext a {
+        color: #00ff00;
+        text-decoration: none;
+    }
+
+    .cardtext a:hover {
+        text-decoration: underline;
+    }
+
+    .info {
+        flex: 2;
+    }
+
+    .inftab {
+        width: 50%;
+        border-collapse: collapse;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+    }
+
+    .inftab td {
+        padding: 0.5rem;
+        border-bottom: 1px solid #00ff00;
+    }
+
+    .inftab td:first-child {
+        font-weight: bold;
+        color: #009900;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <b>Pet Respling</b>
+    </nav>
+
+    <div class="container" id="home">
+        <h1>Pet Respling</h1>
+        <p>Pet Respling allows you to get a respling as a desktop pet on your PC!</p>
+        <p>He moves around, gets hungry, thirsty and sleepy. If you don't want to babysit him, you can turn any of them off!</p>
+        <p>You can additionally change his color scheme, modify his size, toggle gravity and do more!</p>
+        <p>I might work on an android version of this project, who knows?</p>
+        <br><br><br><br>
+
+        <div class="content-layout">
+            <div class="info">
+                <h2>Project Info</h2>
+                <table class="inftab">
+                    <tr><td>Latest Version</td><td>1.0</td></tr>
+                    <tr><td>Code</td><td>Open Source</td></tr>
+                    <tr><td>Status</td><td>Active</td></tr>
+                    <tr><td>Platforms</td><td>Windows, Linux</td></tr>
+                </table>
+
+                <br>
+
+                <h2>Sources</h2>
+                <a href="https://github.com/respnull/petrespling-desktop">GitHub</a><br>
+                <a href="https://respnull.itch.io/petrespling">itch.io</a>
+            </div>
+
+            <br>
+
+            <h2>Images/Screenshots</h2>
+            <div>
+                <img src="https://respnull.github.io/assets/respling-promo0.png">
+            </div>
+        </div>
+
+        <footer>© 2026 respnull</footer>
+    </div>
+</body>
+</html>

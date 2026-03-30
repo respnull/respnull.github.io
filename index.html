@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>respnull - Home</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://respnull.github.io/assets/128.png');
+        background-repeat: repeat;
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #00ff00;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 850px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.75);
+        border-radius: 12px;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+
+    a { color: #00ff00; }
+
+    a.repo-link {
+        color: #00ff00;
+        text-decoration: none;
+    }
+
+    a.repo-link:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .projgrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .projcard {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .projcard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .projcard img {
+        width: 100%;
+        aspect-ratio: 63 / 50;
+        object-fit: cover;
+        display: block;
+    }
+
+    .cardtext {
+        padding: 0.8rem 0.5rem;
+        color: #00ff00;
+    }
+
+    .cardtext h3 {
+        margin: 0.2rem 0;
+        font-size: 1.1rem;
+    }
+
+    .cardtext p {
+        margin: 0.2rem 0 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .cardtext a {
+        color: #00ff00;
+        text-decoration: none;
+    }
+
+    .cardtext a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h1>Home</h1>
+        <p>Welcome to my page! Here, you can see my projects and get detail about them below.</p>
+        <p>Certain obsolete projects may not appear here, and not all projects are guaranteed to be available on GitHub.</p>
+        <p>I hope you enjoy my projects! :^)</p>
+        <br><br><br><br><br>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projgrid">
+                <div class="projcard">
+                    <a href="petrespling.html"><img src="https://respnull.github.io/assets/respling-promo0.png"></a>
+                    <div class="cardtext">
+                        <h3>Pet Respling</h3>
+                        <p>A Respling in your desktop!</p>
+                        <a href="https://github.com/respnull/petrespling-desktop">GitHub</a>
+                        <p></p>
+                        <a href="https://respnull.itch.io/petrespling">itch.io</a>
+                    </div>
+                </div>
+                <div class="projcard">
+                    <img src="https://respnull.github.io/assets/unknown.png"> <!-- wrap <img> with <a> like the first card -->
+                    <div class="cardtext">
+                        <h3>???</h3>
+                        <p>Coming soon...</p>
+                        <!-- <a href="https://github.com/respnull/pet">GitHub</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>© 2026 respnull</footer>
+    </div>
+</body>
+</html>
